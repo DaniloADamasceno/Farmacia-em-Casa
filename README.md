@@ -2,6 +2,7 @@
 
 </hr>
 </br>
+</br>
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/DaniloADamasceno/Farmacia-em-Casa?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/DaniloADamasceno/Farmacia-em-Casa?style=for-the-badge)
@@ -16,6 +17,7 @@
 
 -->
 </br>
+</br>
 
 ## Descrição do Projeto
 
@@ -25,23 +27,29 @@
  Este aplicativo é útil para qualquer pessoa que queira manter um registro de medicamentos em sua casa e obter informações relevantes sobre eles.
 
 </br>
+</br>
 
 ## Recursos Principais
 
-- Lista de Medicamentos: O aplicativo exibe uma lista de medicamentos que podem ser adquiridos sem receita médica.
+- **Lista de Medicamentos**: O aplicativo exibe uma lista de medicamentos que podem ser adquiridos sem receita médica.
 
-- Detalhes do Medicamento: Os usuários podem tocar em um medicamento na lista para obter informações detalhadas, como nome, descrição, dosagem e instruções de uso.
+- **Detalhes do Medicamento**: Os usuários podem tocar em um medicamento na lista para obter informações detalhadas, como nome, descrição, dosagem e instruções de uso.
 
-- Busca: O aplicativo permite aos usuários pesquisar medicamentos por nome ou categoria.
+- **Busca**: O aplicativo permite aos usuários pesquisar medicamentos por nome ou categoria.
 
-- (*Melhoria Futura*)Adicionar Medicamentos: Os usuários têm a opção de adicionar novos medicamentos à lista, juntamente com informações relevantes.
+- (**Melhoria Futura**)  Adicionar Medicamentos: Os usuários têm a opção de adicionar novos medicamentos à lista, juntamente com informações relevantes.
 
+</br>
 </br>
 
 ## Capturas de Tela
 
 ![Captura de Tela 1](screenshot1.png)
+
 ![Captura de Tela 2](screenshot2.png)
+
+</br>
+</br>
 
 ## Como Executar o Projeto
 
@@ -56,6 +64,7 @@
 4. Execute o aplicativo no dispositivo/emulador.
 
 </br>
+</br>
 
 ## Contribuindo
 
@@ -69,19 +78,15 @@ Este é um projeto de código aberto e estamos abertos a contribuições da comu
 
 4. Envie um pull request com suas alterações.
 
+</br>
+</br>
+
 ## Contato
 
-Para qualquer dúvida ou sugestão, entre em contato com **Danilo A Damasceno** [@DaniloADamasceno] por e-mail em *<danilo.engauto@gmail.com>*.
+Para qualquer dúvida ou sugestão, entre em contato com  [@Danilo A. Damasceno](https://github.com/DaniloADamasceno/) por e-mail em *<danilo.engauto@gmail.com>*.
 
-</hr>
-
-# Criando o projeto Angular
-
-Abra o terminal e navegue até a pasta onde deseja criar o projeto Angular.
-Execute o seguinte comando: ng new my-app
-Quando solicitado, escolha o estilo de folha de estilo que desejar. Recomendamos CSS.
-Depois que o projeto for criado, navegue até a pasta do projeto digitando cd my-app.
-Inicie o servidor de desenvolvimento digitando ng serve.
+</br>
+</br>
 
 </hr>
 
@@ -93,7 +98,11 @@ Inicie o servidor de desenvolvimento digitando ng serve.
 
 ## Autores
 
-- [@DaniloADamasceno](https://github.com/DaniloADamasceno/)
+- [@Danilo A. Damasceno](https://github.com/DaniloADamasceno/)
+
+</br>
+</br>
+</br>
 
 ________________________________________________________________________________________________________________________________________________________________
 
