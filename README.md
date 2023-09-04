@@ -7,10 +7,10 @@
 ![GitHub repo size](https://img.shields.io/github/repo-size/DaniloADamasceno/Farmacia-em-Casa?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/DaniloADamasceno/Farmacia-em-Casa?style=for-the-badge)
 
-<!-- 
 
-[![wakatime](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/efbe327f-642a-4a1f-a7e6-e6bc9a23c180.svg)](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/efbe327f-642a-4a1f-a7e6-e6bc9a23c180)
--->
+
+[![wakatime](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/0aa6d9af-122c-45cb-80d7-6fc87f3a3991.svg)](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/0aa6d9af-122c-45cb-80d7-6fc87f3a3991)
+
 <!-- Imagem da Tela inicial do Aplicativo -->
 <!-- 
 ![Imagem](https://raw.githubusercontent.com/DaniloADamasceno/Angular-com-Spring-Boot/Front-Angular/assets/Angular%20com%20Spring.png) 
