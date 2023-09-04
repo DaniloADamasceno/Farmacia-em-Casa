@@ -95,7 +95,6 @@ Para qualquer dúvida ou sugestão, entre em contato com  [@Danilo A. Damasceno]
 **Front-end:** XML
 
 **Back-end:** Kotlin
-
 ## Autores
 
 - [@Danilo A. Damasceno](https://github.com/DaniloADamasceno/)
