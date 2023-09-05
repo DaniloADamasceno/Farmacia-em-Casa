@@ -94,7 +94,7 @@ Para qualquer dúvida ou sugestão, entre em contato com  [@Danilo A. Damasceno]
 
 **Front-end:** XML
 
-**Back-end:** Kotlin
+**Back-end:** ![Kotlin](https://img.shields.io/badge/Kotlin-0095D5?&style=for-the-badge&logo=kotlin&logoColor=white)
 
 ## Autores
 
