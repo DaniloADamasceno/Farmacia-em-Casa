@@ -12,10 +12,11 @@
 [![wakatime](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/0aa6d9af-122c-45cb-80d7-6fc87f3a3991.svg)](https://wakatime.com/badge/user/e7f2e494-878d-4290-9a2b-cc473da48b8a/project/0aa6d9af-122c-45cb-80d7-6fc87f3a3991)
 
 <!-- Imagem da Tela inicial do Aplicativo -->
-<!-- 
-![Imagem](https://raw.githubusercontent.com/DaniloADamasceno/Angular-com-Spring-Boot/Front-Angular/assets/Angular%20com%20Spring.png) 
+<div align="center">
+ 
+![LogoFarmacia](https://github.com/DaniloADamasceno/Farmacia-em-Casa/assets/71226047/bea87add-db2b-49ca-a7a2-c7d6bee482e3)
+ </div>
 
--->
 </br>
 </br>
 
