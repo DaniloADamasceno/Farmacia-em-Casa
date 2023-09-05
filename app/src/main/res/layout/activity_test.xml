@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="191dp"
         android:layout_margin="16dp"
-        app:cardCornerRadius="30dp">
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/farmacinha">
 
 
         <LinearLayout
@@ -30,7 +31,7 @@
                 <ImageView
                     android:id="@+id/farmacinha"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="match_parent"
                     android:src="@drawable/farmacinha"
                     cards:cardCornerRadius="30dp"
                     tools:ignore="ContentDescription" />
@@ -49,6 +50,8 @@
 
     </androidx.cardview.widget.CardView>
 
+
+<!--    Texto do meio da página-->
     <TextView
         android:id="@+id/textFarmaciaHome"
         style="bold"
@@ -60,60 +63,51 @@
         android:textSize="34sp"
         tools:ignore="HardcodedText" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        tools:ignore="UselessLeaf">
+<!--Box de Cars View-->
 
 
-    </LinearLayout>
-
-    <!--    LinearLayout 1-->
-
-    <!--    Segundo linearLayout -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="213dp"
-        android:orientation="horizontal"
-        tools:ignore="ExtraText">
-
-        <!-- Card 1-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView1"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
-
-        <!-- Card 2-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessLeaf">
 
-        <!-- Card 1-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="190dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <Button
+                android:text="Alergias, gripes e resfriados"
+                android:layout_width="166dp"
+                android:layout_height="166dp"
+                android:layout_margin="16dp"
+                android:textAllCaps="true"
+                app:cardCornerRadius="30dp"
+                tools:ignore="ButtonStyle,HardcodedText">
+
+            </Button>
+
+        <ImageButton
+            android:id="@+id/imageButton"
             android:layout_width="166dp"
             android:layout_height="166dp"
             android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
+            tools:srcCompat="@drawable/alergias_gripe" />
+            <Button
+                android:text="Sistema imunológico"
+                android:textAllCaps="true"
+                android:layout_width="166dp"
+                android:layout_height="166dp"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="30dp"
+                tools:ignore="ButtonStyle,HardcodedText">
 
-        <!-- Card 2-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp"
-            tools:ignore="VisualLintBounds">
+            </Button>
+        </LinearLayout>
+
     </LinearLayout>
+
+
