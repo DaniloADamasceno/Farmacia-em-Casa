@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!--    HOME    -->
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/homered"
+        android:title="Home"
+        tools:ignore="HardcodedText" />
+
+    <!--    FEBRE   -->
+    <item
+        android:id="@+id/nav_febre"
+        android:icon="@drawable/febreicon"
+        android:title="Febre"
+        tools:ignore="HardcodedText" />
+
+    <!--    Alergias    -->
+    <item
+        android:id="@+id/nav_alergias"
+        android:icon="@drawable/healthcareicon"
+        android:title="Alergias"
+        tools:ignore="HardcodedText" />
+
+    <!--    Sistema Imunológico -->
+    <item
+        android:id="@+id/nav_imunologico"
+        android:icon="@drawable/healthicon2"
+        android:title="Sistema Imunológico"
+        tools:ignore="HardcodedText" />
+
+    <!--    Cólica  -->
+    <item
+        android:id="@+id/nav_colicas"
+        android:icon="@drawable/womanicon"
+        android:title="Cólica Mestrual"
+        tools:ignore="HardcodedText" />
+
+</menu>

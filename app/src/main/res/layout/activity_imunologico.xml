@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ImunologicoActivity">
+
+
+    <!--?           BOTÃO DE NAVEGAÇÂO    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        app:itemIconTint="@color/material_dynamic_primary0"
+        app:itemTextColor="@color/material_dynamic_neutral10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/button_navigation_menu"
+        tools:ignore="VisualLintBottomNav" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="196dp"
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.028">
+
+                    <!--?        Imagem do Cabeçalho -->
+                    <ImageView
+                        android:id="@+id/farmacinha"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/sistema"
+                        tools:ignore="ContentDescription,MissingPrefix" />
+                </androidx.cardview.widget.CardView>
+
+                <!--?        Texto Titulo-->
+                <TextView
+                    android:id="@+id/textDescricaoOneImunologico"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="Sistema imunológico"
+                    android:textAlignment="center"
+                    android:textAllCaps="true"
+                    android:textColor="@color/azulEscuro"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.001"
+                    tools:ignore="HardcodedText,MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <!--?        MultiTEXTO Descritivo-->
+                <TextView
+                    android:id="@+id/multilineTextOneImunologico"
+                    android:layout_width="379dp"
+                    android:layout_height="406dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:ems="10"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:text=""
+                    android:textSize="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textCabeca"
+                    app:layout_constraintVertical_bias="0.0"
+                    tools:ignore="Autofill,LabelFor,SpUsage,TextViewEdits,SpeakableTextPresentCheck" />
+
+                <!--?        Nome Medicamento CENTRUM-->
+                <TextView
+                    android:id="@+id/nomeMedicamentoCentrum"
+                    style="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="💊     Centrum "
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/laranjaColor"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.001"
+                    tools:ignore="HardcodedText,MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--?       Imagem Medicamentos CENTRUM 1       -->
+                    <ImageView
+                        android:id="@+id/centrum1"
+                        android:layout_width="185dp"
+                        android:layout_height="175dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/centrum1"
+                        tools:ignore="ContentDescription" />
+
+                    <!--?    Imagem Medicamentos CENTRUM 2      -->
+                    <ImageView
+                        android:id="@+id/centrum2"
+                        android:layout_width="185dp"
+                        android:layout_height="175dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/centrum2"
+                        tools:ignore="ContentDescription" />
+                </LinearLayout>
+
+                <!--?        Nome Medicamento BION3     -->
+                <TextView
+                    android:id="@+id/nomeMedicamentoBion3"
+                    style="bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="💊     Bion3"
+                    android:textAlignment="textStart"
+                    android:textAllCaps="true"
+                    android:textColor="@color/laranjaColor"
+                    android:textSize="30sp"
+                    android:textStyle="bold|italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView"
+                    app:layout_constraintVertical_bias="0.001"
+                    tools:ignore="HardcodedText,MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <!--?       Imagem Medicamentos BION3 -1 -->
+                    <ImageView
+                        android:id="@+id/bion31"
+                        android:layout_width="185dp"
+                        android:layout_height="175dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/bion31"
+                        tools:ignore="ContentDescription" />
+
+                    <!--?       Imagem Medicamentos BION3 -2 -->
+                    <ImageView
+                        android:id="@+id/bion32"
+                        android:layout_width="185dp"
+                        android:layout_height="175dp"
+                        android:layout_margin="16dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/bion32"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -15,7 +15,16 @@
         android:theme="@style/Theme.FarmaciaEmCasa"
         tools:targetApi="31">
         <activity
-            android:name=".test"
+            android:name=".ImunologicoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ColicasActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FebreActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlergiaResfriadosActivity"
             android:exported="false" />
         <activity
             android:name=".HomeActivity"

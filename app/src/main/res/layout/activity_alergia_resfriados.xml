@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:cards="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AlergiaResfriadosActivity">
+
+    <!--?           BOTÃO DE NAVEGAÇÂO    -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="2dp"
+        app:itemIconTint="@color/material_dynamic_primary0"
+        app:itemTextColor="@color/material_dynamic_neutral10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/button_navigation_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="UselessParent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="196dp"
+            android:layout_margin="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.028"
+            cards:cardCornerRadius="30dp">
+
+            <!--?        Imagem do Cabeçalho    -->
+            <ImageView
+                android:id="@+id/alergiasImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/gripeimage"
+                cards:cardCornerRadius="30dp"
+                tools:ignore="ContentDescription,MissingPrefix" />
+        </androidx.cardview.widget.CardView>
+
+        <!--?        Texto Titulo ALERGIAS, GRIPES E RESFRIADOS -->
+        <TextView
+            android:id="@+id/textDescricaoOneGripe"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Alergias, gripes e resfriados"
+            android:textAlignment="center"
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <!--?        MultiTEXTO descritivo Alergias, Gripes e Resfriados-->
+        <TextView
+            android:id="@+id/multiTextoGripe"
+            android:layout_width="379dp"
+            android:layout_height="406dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:text=""
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textCabeca"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="Autofill,LabelFor,SpUsage,TextViewEdits,SpeakableTextPresentCheck" />
+
+        <!--?        CONTRA ALERGIAS    -->
+        <TextView
+            android:id="@+id/contraAlergias"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Medicamentos contra Alergias "
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:layout_marginTop="80dp"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <!--?        Nome Medicamento NEOSORO-->
+        <TextView
+            android:id="@+id/nomeMedicamentoNeoSoro"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="💊     Neosoro "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos NEOSORO 1-->
+            <ImageView
+                android:id="@+id/neosoro1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/neosoro1"
+                tools:ignore="ContentDescription" />
+
+            <!--? Imagem Medicamentos NEOSORO 2  -->
+            <ImageView
+                android:id="@+id/neosoro2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/neosoro2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--?        Nome Medicamento ALLEGRA   -->
+        <TextView
+            android:id="@+id/nomeMedicamentoAllegra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     Allegra "
+            android:textAlignment="textStart"
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos ALLEGRA 1 -->
+            <ImageView
+                android:id="@+id/alegra1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/allegra1"
+                tools:ignore="ContentDescription" />
+
+            <!--? Imagem Medicamentos ALLEGRA 2 -->
+            <ImageView
+                android:id="@+id/allegra2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/allegra2"
+                tools:ignore="ContentDescription" />
+
+
+
+        </LinearLayout>
+
+        <!--?        Nome Medicamento LORATADINA-->
+        <TextView
+            android:id="@+id/nomeMedicamentoLoratadina"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     Loratadina "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos LORATADINA 1    -->
+            <ImageView
+                android:id="@+id/loratadina1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/loratadina1"
+                tools:ignore="ContentDescription" />
+
+            <!--?        Imagem Medicamentos LORATADINA 2 -->
+            <ImageView
+                android:id="@+id/loratadina2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/loratadina2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--        Nome Medicamento DECONGEX-->
+        <TextView
+            android:id="@+id/nomeMedicamentoDencogex"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     decongex "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--Imagem Medicamentos Decongex1-->
+            <ImageView
+                android:id="@+id/decongex1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/decongex1"
+                tools:ignore="ContentDescription" />
+
+            <!-- Imagem Medicamentos Decongex2 -->
+            <ImageView
+                android:id="@+id/decongex2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/decongex2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--?        CONTRA GRIPES E RESFRIADOS  -->
+        <TextView
+            android:id="@+id/contraGripeseResfriados"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="Medicamentos contra Gripes e Resfriados "
+            android:textColor="@color/azulEscuro"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+        <!--?        Nome Medicamento STILGRIP      -->
+        <TextView
+            android:id="@+id/nomeMedicamentoStilgrip"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     StilGrip "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos STILGRIP 1  -->
+            <ImageView
+                android:id="@+id/stilgrip1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/stilgrip1"
+                tools:ignore="ContentDescription" />
+
+            <!--?        Imagem Medicamentos STILGRIP 2 -->
+            <ImageView
+                android:id="@+id/stilgrip2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/stilgrip2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--?        Nome Medicamento BENEGRIPE  -->
+        <TextView
+            android:id="@+id/nomeMedicamentoBenegripe"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     Benegripe "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos BENEGRIPE 1     -->
+            <ImageView
+                android:id="@+id/benegripe1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/benegripe1"
+                tools:ignore="ContentDescription" />
+
+            <!--?        Imagem Medicamentos BENEGRIPE 2 -->
+            <ImageView
+                android:id="@+id/benegripe2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/benegripe2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--?        Nome Medicamento CHÁ VICK PYRENA-->
+        <TextView
+            android:id="@+id/nomeMedicamentoChaGripe"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     Chá para gripe Vick Pyrena "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos VICK PYRENA 1       -->
+            <ImageView
+                android:id="@+id/vick1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/vick1"
+                tools:ignore="ContentDescription" />
+
+            <!--?        Imagem Medicamentos VICK PYRENA 2       -->
+            <ImageView
+                android:id="@+id/vick2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/vick2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+        <!--?        Nome Medicamento RESFENOL       -->
+        <TextView
+            android:id="@+id/nomeMedicamentoResfenol"
+            style="bold"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="💊     Resfenol "
+            android:textColor="@color/laranjaColor"
+            android:textStyle="bold|italic"
+            android:textAlignment="textStart"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardView"
+            app:layout_constraintVertical_bias="0.001"
+            tools:ignore="HardcodedText,MissingConstraints"
+            tools:layout_editor_absoluteX="0dp" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!--?       Imagem Medicamentos RESFENOL 1       -->
+            <ImageView
+                android:id="@+id/resfenol1"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/resfenol1"
+                tools:ignore="ContentDescription" />
+
+            <!--?        Imagem Medicamentos RESFENOL 2         -->
+            <ImageView
+                android:id="@+id/resfenol2"
+                android:layout_width="185dp"
+                android:layout_height="175dp"
+                android:layout_margin="16dp"
+                android:layout_weight="1"
+                android:src="@drawable/resfenol2"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

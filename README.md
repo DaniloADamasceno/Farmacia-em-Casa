@@ -111,3 +111,6 @@ ________________________________________________________________________________
 
 *Atualização* 1.0.0 :
 > App Criado no Android Studio e o seu Readme.
+
+*Atualização* 1.0.1 :
+> Criação da HomePage.

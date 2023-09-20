@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:cards="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -11,9 +10,11 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="191dp"
-        android:layout_margin="16dp"
-        app:cardCornerRadius="30dp">
-
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="16dp"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/farmacinha">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -27,93 +28,113 @@
                 android:orientation="horizontal"
                 tools:ignore="UselessLeaf,UselessParent">
 
+                <!--?        Imagem CARD Home                        -->
                 <ImageView
                     android:id="@+id/farmacinha"
                     android:layout_width="match_parent"
-                    android:layout_height="190dp"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerInside"
                     android:src="@drawable/farmacinha"
-                    cards:cardCornerRadius="30dp"
                     tools:ignore="ContentDescription" />
-
             </LinearLayout>
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            tools:ignore="UselessLeaf">
-
-        </LinearLayout>
-
-
     </androidx.cardview.widget.CardView>
 
-    <TextView
-        android:id="@+id/textFarmaciaHome"
-        style="bold"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:text="Farmácia em casa: conheça os itens que não podem faltar"
-        android:textAlignment="center"
-        android:textSize="34sp"
-        tools:ignore="HardcodedText" />
-
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         tools:ignore="UselessLeaf">
 
+        <!--?    Texto Principal da Home-->
+        <TextView
+            android:id="@+id/textFarmaciaHome6"
+            android:layout_width="wrap_content"
+            android:layout_height="134dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_weight="1"
+            android:text="Farmácia em casa: conheça os itens que não podem faltar"
+            android:textAlignment="center"
+            android:textColor="@color/azulEscuro"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText,InefficientWeight,TextSizeCheck" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf,UselessParent">
+
+            <!--?       Botão Febre   -->
+            <ImageButton
+                android:id="@+id/imageFebreButton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/febre"
+                tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
+
+            <!--?       Botão Alergias -->
+            <ImageButton
+                android:id="@+id/imageResfriadoButton"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:backgroundTint="@color/white"
+                android:scaleType="centerCrop"
+                android:src="@drawable/alergias_gripe"
+                tools:ignore="ContentDescription,VisualLintBounds,SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="horizontal"
+            tools:ignore="UselessLeaf">
+
+            <LinearLayout
+                android:layout_width="362dp"
+                android:layout_height="173dp"
+                android:layout_marginEnd="16dp"
+                android:orientation="horizontal"
+                tools:ignore="UselessLeaf,UselessParent">
+
+                <!--?       Botão Sistema Imunológico    -->
+                <ImageButton
+                    android:id="@+id/imageSistemaImunologicoButton"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_marginEnd="16dp"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/sistema_imunologico"
+                    tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck,VisualLintBounds" />
+
+
+                <!--?       Botão Cólica Menstrual   -->
+                <ImageButton
+                    android:id="@+id/imageColicaButton"
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_marginStart="16dp"
+                    android:backgroundTint="@color/white"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/colica"
+                    app:cardCornerRadius="50dp"
+                    tools:ignore="ContentDescription,SpeakableTextPresentCheck,VisualLintBounds" />
+            </LinearLayout>
+        </LinearLayout>
     </LinearLayout>
 
-    <!--    LinearLayout 1-->
-
-    <!--    Segundo linearLayout -->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="213dp"
-        android:orientation="horizontal"
-        tools:ignore="ExtraText">
-
-        <!-- Card 1-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView1"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
-
-        <!-- Card 2-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView2"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <!-- Card 1-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView3"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp">
-
-        <!-- Card 2-->
-        <androidx.cardview.widget.CardView
-            android:id="@+id/cardView4"
-            android:layout_width="166dp"
-            android:layout_height="166dp"
-            android:layout_margin="16dp"
-            app:cardCornerRadius="30dp"
-            tools:ignore="VisualLintBounds">
-    </LinearLayout>
+</LinearLayout>
