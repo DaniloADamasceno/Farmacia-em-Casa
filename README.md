@@ -114,3 +114,9 @@ ________________________________________________________________________________
 
 *Atualização* 1.0.1 :
 > Criação da HomePage.
+
+> *Atualização* 1.0.2 :
+> Criação da FebrePage.
+> Criação da ColicasPage.
+> Criação da AlergiaResfriadosPage.
+> Criação da SistemaImunologicoPage.
