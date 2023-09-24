@@ -45,9 +45,11 @@
 
 ## Capturas de Tela
 
-![Captura de Tela 1](screenshot1.png)
 
-![Captura de Tela 2](screenshot2.png)
+
+![CapSpli](https://github.com/DaniloADamasceno/Farmacia-em-Casa/assets/71226047/60bec274-5d4c-4739-a1e3-c365d5420535)
+
+![CapHOME](https://github.com/DaniloADamasceno/Farmacia-em-Casa/assets/71226047/9b362e3c-3600-49fd-8bd5-74ad452628c9)
 
 </br>
 </br>
